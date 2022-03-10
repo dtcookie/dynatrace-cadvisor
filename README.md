@@ -36,7 +36,7 @@ metrics.dynatrace.com/filter: |
   }   
 ```
 
-Please check out the [Dynatrace Documentation](https://www.dynatrace.com/support/help/how-to-use-dynatrace/infrastructure-monitoring/container-platform-monitoring/kubernetes-monitoring/monitor-prometheus-metrics) in case you would like adjust which metrics should get filtered.
+Please check out the [Dynatrace Documentation](https://www.dynatrace.com/support/help/how-to-use-dynatrace/infrastructure-monitoring/container-platform-monitoring/kubernetes-monitoring/monitor-prometheus-metrics) in case you would like to adjust which metrics should get filtered.
 
 ### Uninstall dynatrace-cadvisor
 ```sh
