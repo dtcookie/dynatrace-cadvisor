@@ -1,5 +1,5 @@
 # dynatrace-cadvisor
-The cAdvisor Extension enables [Dynatrace[(https://www.dynatrace.com)] to consume [cAdvisor](https://github.com/google/cadvisor) container metrics that are getting published by the [kublet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) node agents of a [Kubernetes](https://kubernetes.io/docs/home/) Cluster.
+The cAdvisor Extension enables [Dynatrace](https://www.dynatrace.com) to consume [cAdvisor](https://github.com/google/cadvisor) container metrics that are getting published by the [kublet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) node agents of a [Kubernetes](https://kubernetes.io/docs/home/) Cluster.
 
 <p>
   <a href="https://github.com/dtcookie/dynatrace-cadvisor/actions/workflows/release.yml"><img alt="GitHub Workflow Status (main branch)" src="https://img.shields.io/github/workflow/status/dynatrace-oss/dt-cli/Build%20Test%20Release/main?logo=github"></a>
