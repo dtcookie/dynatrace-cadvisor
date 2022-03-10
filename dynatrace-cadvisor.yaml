@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: dynatrace-cadvisor
+  namespace: dynatrace
+  labels:
+    app: dynatrace-cadivsor
+spec:
+  selector:
+    matchLabels:
+      app: dynatrace-cadvisor
+  template:
+    metadata:
+      labels:
+        app: dynatrace-cadvisor
+      namespace: dynatrace
+      annotations:
+        metrics.dynatrace.com/scrape: 'true'
+        metrics.dynatrace.com/path: '/metrics'
+        metrics.dynatrace.com/port: '9001'
+        metrics.dynatrace.com/secure: 'false'        
+        metrics.dynatrace.com/filter: | 
+          {
+            "mode" : "include",
+            "names" : [
+              "container_*"
+            ]
+          }        
+    spec:
+      serviceAccountName: dynatrace-kubernetes-monitoring
+      containers:
+      - name: dynatrace-cadvisor
+        image: dtcookie/dynatrace-cadvisor:1.0.0
